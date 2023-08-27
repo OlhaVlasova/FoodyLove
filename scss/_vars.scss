@@ -1,0 +1,25 @@
+$mainFontFamily: 'Verdana', sans-serif !default;
+
+$titleFontFamily: 'Oswald', sans-serif;
+
+$menuHeaderFontSize: 14px;
+
+// colors
+$whiteColor: #ffffff;
+$discordColor: #5662F6;
+$bodyDarkTheme: #313131;
+$secondaryColor: #EBD593;
+$footerBg: #171717;
+$mobileMenuBg: #202020;
+
+// menu
+$mobileMenuSizeMD: 85% !default;
+
+:root {
+    --main-font-size: 18px;
+    --title-font-size-h1: 48px;
+    --title-font-size-h2: 36px;
+    --mobile-menu-size: 85vw;
+    --mobile-margin-size: -85vw;
+}
+
