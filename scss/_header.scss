@@ -1,0 +1,98 @@
+.info {
+    font-family: $openSansFont;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    &--telefon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 120px;
+        font-family: $openSansFont;
+        font-size: 15px;
+        p {
+            margin-right: 15px;
+        }
+    }
+    &-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+}
+#home {
+    width: 100%;
+    min-height: 770px;
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7) ), url('../resources/img/mainBanner.png');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: relative;
+}
+.main-menu {
+    min-height: 90px;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a {
+            display: block;
+            margin: 0 5px;
+            padding: 15px 25px;
+            border-radius: 3px;
+            border: 1px solid transparent;
+            font-size: var(--nav-font-size);
+            font-family: $myriadProFont;
+            transition: all .3s;
+            &:hover {
+                border: 1px solid #fff;
+                color: $yelowTextColor;
+                background-color: rgba(0,0,0, 0.2);
+            }
+        }
+        [page='active'] {
+            border: 1px solid #fff;
+                color: $yelowTextColor;
+                background-color: rgba(0,0,0, 0.2);
+        }
+
+    }
+}
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    &--title {
+        font-family: $pacificoFont;
+        font-size: 106px;
+        text-shadow: -2.5px 2.598px 3.5px #000000;
+    }
+    &--text {
+        font-size: 25px;
+        color: #fff;
+        max-width: 75%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &--button {
+        display: block;
+        padding: 15px 25px;
+        border-radius: 5px;
+        border: 2px solid #fff;
+        color: #fff;
+        text-align: center;
+        transition: all .3s;
+        &:hover {
+            // color: $yelowTextColor;
+            background-color: rgba(0,0,0, 0.2);
+        }
+    }
+}

@@ -1,25 +1,25 @@
-$mainFontFamily: 'Verdana', sans-serif !default;
-
-$titleFontFamily: 'Oswald', sans-serif;
-
-$menuHeaderFontSize: 14px;
+$timesNewRomanFont: 'Times New Roman', serif;
+$myriadProFont: 'Myriad Pro', sans-serif;
+$openSansFont: 'Open Sans', sans-serif;
+$pacificoFont: 'Pacifico', cursive;
 
 // colors
-$whiteColor: #ffffff;
-$discordColor: #5662F6;
-$bodyDarkTheme: #313131;
-$secondaryColor: #EBD593;
-$footerBg: #171717;
-$mobileMenuBg: #202020;
+$textColor: #2b2b2b;
+$yelowTextColor: #e7a331;
+$bodyLightTheme: #f1f1f1;
 
-// menu
-$mobileMenuSizeMD: 85% !default;
+
 
 :root {
-    --main-font-size: 18px;
+    --wrapSize: 1280px;
+    --nav-font-size: 17px;
+    --main-font-size: 16px;
     --title-font-size-h1: 48px;
     --title-font-size-h2: 36px;
+    
     --mobile-menu-size: 85vw;
     --mobile-margin-size: -85vw;
+
+    --main-familia-font: $timesNewRomanFont;
 }
 

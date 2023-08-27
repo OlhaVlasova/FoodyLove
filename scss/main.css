@@ -337,17 +337,14 @@ template {
 
 :root {
   --wrapSize: 1280px;
-  --nav-font-size: 17px;
   --main-font-size: 16px;
   --title-font-size-h1: 48px;
   --title-font-size-h2: 36px;
   --mobile-menu-size: 85vw;
-  --mobile-margin-size: -85vw;
-  --main-familia-font: $timesNewRomanFont; }
+  --mobile-margin-size: -85vw; }
 
 body {
-  background-color: #f1f1f1;
-  font-family: --main-familia-font; }
+  background-color: #f1f1f1; }
 
 p {
   color: #2b2b2b; }
@@ -357,90 +354,5 @@ p {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px; }
-
-.info {
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative; }
-  .info--telefon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-right: 120px;
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px; }
-    .info--telefon p {
-      margin-right: 15px; }
-  .info-label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2; }
-
-#home {
-  width: 100%;
-  min-height: 770px;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url("../resources/img/mainBanner.png");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  position: relative; }
-
-.main-menu {
-  min-height: 90px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.64);
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .main-menu nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; }
-    .main-menu nav a {
-      display: block;
-      margin: 0 5px;
-      padding: 15px 25px;
-      border-radius: 3px;
-      border: 1px solid transparent;
-      font-size: var(--nav-font-size);
-      font-family: "Myriad Pro", sans-serif;
-      transition: all .3s; }
-      .main-menu nav a:hover {
-        border: 1px solid #fff;
-        color: #e7a331;
-        background-color: rgba(0, 0, 0, 0.2); }
-    .main-menu nav [page='active'] {
-      border: 1px solid #fff;
-      color: #e7a331;
-      background-color: rgba(0, 0, 0, 0.2); }
-
-.home-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px; }
-  .home-banner--title {
-    font-family: "Pacifico", cursive;
-    font-size: 106px;
-    text-shadow: -2.5px 2.598px 3.5px #000000; }
-  .home-banner--text {
-    font-size: 25px;
-    color: #fff;
-    max-width: 75%;
-    text-align: center;
-    margin-bottom: 40px; }
-  .home-banner--button {
-    display: block;
-    padding: 15px 25px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    color: #fff;
-    text-align: center;
-    transition: all .3s; }
-    .home-banner--button:hover {
-      background-color: rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=main.css.map */
