@@ -1,0 +1,86 @@
+.delightful {
+    text-align: center;
+    padding: 83px 0 115px;
+    position: relative;
+    &-slider {
+        max-width: 1160px;
+        margin: 0 auto;
+        position: relative;
+        &--item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            .dishes {
+                &:hover {
+                    &>.dishes--hover {
+                        opacity: 1;
+                    }
+                }
+                max-width: 290px;
+                max-height: 300px;
+                border: 1px solid #adadad;
+                margin-bottom: 15px;
+                position: relative;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+                &--hover {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0 20px;
+                    transition: all .5s;
+                    &-desc {
+                        background-color: rgba($color: #000000, $alpha: 0.8);
+                        color: #fff;
+                        padding: 35px 20px 30px;
+                        text-align: center;
+                        .price {
+                            font-family: $timesNewRomanFont;
+                            font-size: 41px;
+                        }
+                        .clickHere-button {
+                            margin: 15px auto 0;
+                        }
+                    }
+                }
+                
+            }
+            
+        }
+    }
+
+    .bg_recipes3 {
+        position: absolute;
+        display: block;
+        bottom: -166px;
+        right: 0;
+    }
+}
+.slider-prew, .slider-next {
+    position: absolute;
+    top: 54%;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+.slider-prew {
+    left: 0;
+}
+.slider-next {
+    right: 0;
+}
+

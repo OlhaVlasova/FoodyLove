@@ -3,18 +3,47 @@
 @import 'vars';
 
 body {
-    background-color: $bodyLightTheme;
+    background-image: url('../resources/img/bg_body.png');
+    background-repeat: repeat;
     font-family: --main-familia-font;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 400;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: $timesNewRomanFont;
+    font-size: var(--title-font-size-h2);
+}
+h3 {
+    font-family: $pacificoFont;
+    font-size: var(--title-font-size-h3);
+}
+h4 {
+    font-size: var(--title-font-size-h4);
+    font-family: $timesNewRomanFont;
+    text-transform: uppercase;
+    margin: 10px 0;
+    line-height: 1.4;
+    font-weight: 200;
 }
 p {
     color: $textColor;
+    font-size: var(--main-font-size);
 }
 .wrap {
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 10px;
+    position: relative;
 }
 
 
 @import 'header';
+@import 'aboutUs';
+@import 'delightful';
+@import 'price';
+@import 'advertising';
+@import 'footer';

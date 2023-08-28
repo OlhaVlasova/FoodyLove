@@ -1,0 +1,77 @@
+.clickHere-button {
+    padding: 15px 25px;
+    background-color: $yelowTextColor;
+    color: #fff;
+    display: block;
+    width: fit-content;
+    transition: all .3s;
+    border-radius: 5px;
+    &:hover {
+        background-color: #fca611;
+    }
+}
+.aboutUs {
+    padding: 90px 0 130px;
+    position: relative;
+    background-image: url('../resources/img/bg_about.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    &_bg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &--photo {
+            margin: 35px 35px 0 15px;
+        }
+        &--desc {
+            margin: 0 15px 0 35px;
+        }
+        &--text {
+            margin-bottom: 25px;
+        }
+        &--button {
+            margin-top: 40px;
+        }
+    }
+}
+.recipes {
+    padding: 90px 0 130px;
+    position: relative;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url('../resources/img/bg_recipes.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        position: relative;
+        &--desc {
+            padding: 50px 43px;
+            background-image: url('../resources/img/bg_body.png');
+            background-repeat: repeat;
+            position: absolute;
+            left: 0;
+            top: 4%;
+            max-width: 50%;
+        }
+        &--photo {
+            width: 55%;
+            background-color: red;
+            position: relative;
+            img {
+                width: 100%;
+                display: block;
+            }
+        }
+    } 
+    .bg_recipes2 {
+        position: absolute;
+        left: 0;
+        bottom: -175px;
+    }
+}

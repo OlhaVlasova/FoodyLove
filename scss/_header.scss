@@ -15,7 +15,7 @@
             margin-right: 15px;
         }
     }
-    &-label {
+    &-logo {
         position: absolute;
         top: 0;
         left: 0;
@@ -27,7 +27,7 @@
     min-height: 770px;
     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7) ), url('../resources/img/mainBanner.png');
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     position: relative;
 }
 .main-menu {

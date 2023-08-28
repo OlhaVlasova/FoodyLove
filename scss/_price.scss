@@ -1,0 +1,84 @@
+.price-dish {
+    padding: 100px 0 170px;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('../resources/img/bg_price.png');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    text-align: center;
+    &>.wrap>h2, &>.wrap>h3 {
+        color: #fff;
+        margin: 0.5em 0;
+    }
+    &--item {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin: 35px 0 100px;
+        &_1 {
+            justify-content: flex-start;
+        }
+        &_2 {
+            justify-content: flex-end;
+            .price-dish--menu {
+                left: 0%;
+                top: 6%;
+            }
+        }
+        &_3 {
+            justify-content: flex-start;
+            .price-dish--menu {
+                top: 6%;
+            }
+        }
+    }
+    &--photo {
+        width: 55%;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &--menu {
+        padding: 50px 43px;
+        background-image: url('../resources/img/bg_body.png');
+        background-repeat: repeat;
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        width: 50%;
+        &_box {
+            position: relative;
+        }
+        &_item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: nowrap;
+            height: fit-content;
+            &--dots {
+                width: 100%;
+                background-image: url('../resources/img/icons/dot.png');
+                background-repeat: repeat-x;
+                margin: 11px 5px 0;
+                height: 2px;
+            }
+            &>p {
+                font-size: 18px;
+                font-weight: 700;
+            }
+            &--name {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p {
+                    font-size: 18px;
+                    white-space: nowrap;
+                }
+            }
+            img {
+                display: block;
+                margin-right: 5px;
+            }
+
+        }
+    }
+}
