@@ -9,6 +9,12 @@ $(document).ready(function(){
         nextArrow: $(".slider-next"),
         responsive: [
             {
+                breakpoint: 1240,
+                settings: {
+                    arrows: false
+                }
+            },
+            {
                 breakpoint: 960,
                 settings: {
                     slidesToShow: 3,
@@ -37,7 +43,7 @@ $(document).ready(function(){
         $("body").removeClass("noScroll");
     });
 
-    $(".clickHere-button").on("click", function() {
+    $("#submit").on("click", function() {
         alert("Thanks for your message. We will call you soon!");
     });
   });

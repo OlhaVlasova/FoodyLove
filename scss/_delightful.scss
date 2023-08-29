@@ -17,6 +17,11 @@
                         opacity: 1;
                     }
                 }
+                &:focus {
+                    &>.dishes--hover {
+                        opacity: 1;
+                    }
+                }
                 max-width: 290px;
                 max-height: 300px;
                 border: 1px solid #adadad;
