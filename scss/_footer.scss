@@ -1,7 +1,54 @@
 .footer {
     background-image: url('../resources/img/bg_footer.png');
+    position: relative;
     &-top {
         padding: 60px 0 30px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        h3 {
+            color: #fff;
+        }
+        &--contacts {
+            text-align: center;
+            margin: 70px 0;
+            p {
+                color: #fff;
+                font-size: 15px;
+                max-width: 80%;
+                margin-bottom: 15px;
+            }
+        }
+        &--forms {
+            input, textarea {
+                display: block;
+                width: 370px;
+                border: none;
+                border-radius: 5px;
+                background-color: #323232;
+                padding: 14px 25px;
+                margin-bottom: 11px;
+                resize: none;
+                color: #9a9a9a;
+                &::placeholder {
+                    color: #9a9a9a;
+                    font-size: 15px;
+                }
+            }
+        }
+        &--schedule {
+            color: #fff;
+            text-align: center;
+            margin: 50px 0;
+            h6 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+            p {
+                color: #fff;
+            }
+        }
     }
     &-botton {
         background-color: #0d0d0d;
@@ -11,5 +58,15 @@
             font-size: 15px;
             color: #fff;
         }
+    }
+    .bg_recipes4 {
+        position: absolute;
+        left: 0;
+        top: 10%;
+    }
+    .bg_recipes3 {
+        position: absolute;
+        right: 0;
+        top: 25%;
     }
 } 

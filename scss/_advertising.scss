@@ -3,4 +3,35 @@
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) ), url('../resources/img/bg_advertising.png');
     background-repeat: repeat-y;
     background-size: 100% auto;
+    &-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $timesNewRomanFont;
+        h3 {
+            color: #fff;
+            margin: 0;
+        }
+    }
+    &_desc {
+        margin-left: 80px;
+        color: #fff;
+        &--title {
+            font-size: 95px;
+            text-transform: uppercase;
+        }
+        &--text {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        &--store {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            a {
+                display: block;
+                margin: 30px 30px 30px 0;
+            }
+        }
+    }
 }
