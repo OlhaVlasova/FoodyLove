@@ -1,5 +1,4 @@
 @import 'reset';
-@import 'fonts';
 @import 'vars';
 
 body {
@@ -42,6 +41,19 @@ p {
     padding: 0 10px;
     position: relative;
 }
+.noScroll {
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgba($color: #fff, $alpha: 0.1));
+    border-radius: 6px;
+    &:hover{
+        background: linear-gradient(transparent, rgba($color: #fff, $alpha: 0.7));
+    }
+}
 
 
 @import 'header';
@@ -50,3 +62,4 @@ p {
 @import 'price';
 @import 'advertising';
 @import 'footer';
+@import 'responsive';

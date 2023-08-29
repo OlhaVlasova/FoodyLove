@@ -29,7 +29,7 @@
             margin: 35px 35px 0 15px;
         }
         &--desc {
-            margin: 0 15px 0 35px;
+            padding: 0 15px 15px 35px;
         }
         &--text {
             margin-bottom: 25px;
@@ -55,7 +55,7 @@
             background-image: url('../resources/img/bg_body.png');
             background-repeat: repeat;
             position: absolute;
-            left: 0;
+            left: 10px;
             top: 4%;
             max-width: 50%;
         }

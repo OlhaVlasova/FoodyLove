@@ -25,7 +25,7 @@
 #home {
     width: 100%;
     min-height: 770px;
-    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7) ), url('../resources/img/mainBanner.png');
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('../resources/img/mainBanner.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -91,8 +91,55 @@
         text-align: center;
         transition: all .3s;
         &:hover {
-            // color: $yelowTextColor;
             background-color: rgba(0,0,0, 0.2);
         }
     }
+}
+
+.burger-icon {
+    display: none;
+    position: absolute;
+    right: 65px;
+    top: 0;
+    margin-top: 27px;
+    z-index: 5;
+    height: 16px;
+    width: fit-content;
+    cursor: pointer;
+    span {
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 5px;
+        width: 36px;
+        height: 3px;
+        background-color: #ffffff;
+        transition: transform .5s, opacity .5s, background-color .5s;
+    }
+    span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+    span:nth-child(3) {
+        transform: translateY(10px);
+    }
+}
+
+.main-menu.open {
+    .burger-icon {
+        &>span:nth-child(1) {
+            transform: translateY(0) rotate(45deg);
+            background-color: $yelowTextColor;
+        }
+        &>span:nth-child(2) {
+            opacity: 0;
+        }
+        &>span:nth-child(3) {
+            transform: translateY(0) rotate(-45deg);
+            background-color: $yelowTextColor;
+        }
+    }
+    #nav {
+        display: flex;
+    }
+    
 }

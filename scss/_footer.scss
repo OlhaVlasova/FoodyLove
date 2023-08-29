@@ -2,12 +2,16 @@
     background-image: url('../resources/img/bg_footer.png');
     position: relative;
     &-top {
-        padding: 60px 0 30px;
+        padding: 60px 10px 30px;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
         h3 {
             color: #fff;
+        }
+        &--item {
+            text-align: center;
+            width: 33%;
         }
         &--contacts {
             text-align: center;

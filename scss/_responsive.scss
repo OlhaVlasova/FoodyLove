@@ -1,0 +1,351 @@
+@media screen and (max-width: 1280px) {
+    .slider-prew, .slider-next {
+        display: none;
+    }
+    .footer {
+        .bg_recipes4 {
+            display: none;
+        }
+    }
+    .info {
+        &--telefon {
+            margin-right: 50px;
+        } 
+        &-logo {
+            img {
+                max-width: 95%;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 1180px) {
+    .info {
+        &--telefon {
+            margin-right: 10px;
+            flex-direction: column;
+            p {
+                margin-bottom: 2px;
+            }
+        }
+        &-logo {
+            img {
+                max-width: 68%;
+            }
+        }
+    } 
+    .recipes-content--desc {
+        top: -4%;
+        max-width: 55%;
+    }
+    .aboutUs {
+        background-position: 100% 125%;
+    }
+    .recipes {
+        .bg_recipes2 {
+            left: -25px;
+            transform: scale(0.75);
+        }
+
+    } 
+    .delightful {
+        .bg_recipes3 {
+            transform: scale(0.75);
+            right: -20px;
+        }
+    }
+    .price-dish {
+        padding: 100px 0 120px;
+    }
+    .price-dish--menu {
+        width: 60%;
+        left: 40%;
+    }
+    .price-dish--item_2 .price-dish--menu {
+        top: -6%;
+    }
+    .footer-top--forms input, .footer-top--forms textarea {
+        max-width: 330px;
+    }
+    .footer {
+        .clickHere-button {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    :root {
+        --nav-font-size: 28px;
+    }
+    #home {
+        min-height: 600px;
+    }
+    .main-menu {
+        min-height: 0;
+    }
+    .burger-icon {
+        display: block;
+        z-index: 6;
+    }
+    #nav {
+        display: none;
+        position: fixed;
+        background-color: rgba(0,0,0, 0.95);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        flex-direction: column;
+        justify-content: center;
+        [page='active'] {
+            border: none;
+        }
+        a:hover {
+            border: none;
+        }
+    }
+    .advertising {
+        padding: 15px 0 15px;
+        &_desc {
+            margin-left: 20px;
+            &--title {
+                font-size: 78px;
+            }
+            &--text {
+                font-size: 24px;
+            }
+            &--store {
+                flex-direction: column;
+                a {
+                    margin: 20px 0 0 0;
+                }
+            }
+        }
+        &_logo {
+            img {
+                transform: scale(0.8);
+            }
+        }
+    }
+
+    .footer {
+        &-top {
+            flex-direction: column;
+            padding: 30px 10px 30px;
+            &--item {
+                width: 100%;
+            }
+            &--contacts {
+                margin: 30px 0;
+                p {
+                    max-width: 95%;
+                    margin: 0 auto 10px;
+                }
+            }
+            &--schedule {
+                margin: 30px 0;
+            }
+        }
+        .clickHere-button {
+            width: 60%;
+            margin: 0 auto;
+        }
+    } 
+    .footer-top--forms input, .footer-top--forms textarea {
+        max-width: 95%;
+        width: 60%;
+        margin: 0 auto 11px;
+    }
+    .recipes .bg_recipes2 {
+        left: -46px;
+        transform: scale(0.5);
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    :root {
+        --main-font-size: 16px;
+        --title-font-size-h1: 38px;
+        --title-font-size-h2: 30px;
+        --title-font-size-h3: 24px;
+        --title-font-size-h4: 18px;
+    }
+    #home {
+        min-height: 650px;
+    }
+    .home-banner {
+        margin-top: 50px;
+    }
+    .aboutUs {
+        padding: 40px 0 70px;
+        &-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+    .recipes {
+        padding: 40px 0 70px;
+        &-content {
+            flex-direction: column;
+            align-items: center;
+            &--desc {
+                position: relative;
+                width: 100%;
+                max-width: 100%;
+                top: 0;
+                left: 0;
+            }
+            &--photo {
+                width: 60%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .delightful {
+        padding: 40px 0 115px;
+    }
+    .price-dish {
+        padding: 60px 0 80px;
+        &--menu {
+            width: 80%;
+            left: 15%;
+            top: 8%;
+        }
+        &--item {
+            margin-bottom: 160px;
+        }
+        &--photo {
+            width: 70%;
+        }
+    }
+    .price-dish--item_2 {
+        .price-dish--menu {
+            top: 8%;
+            left: 2%;
+        }
+    }
+    .price-dish--item_3 .price-dish--menu {
+        top: 8%;
+    }
+    .advertising {
+        padding: 30px 0;
+        &_logo {
+            display: none;
+        }
+        &-box {
+            text-align: center;
+        }
+        &_desc--title {
+            font-size: 65px;
+        }
+    }
+
+    
+
+}
+
+@media screen and (max-width: 760px) {
+    .info-logo img {
+        max-width: 41%;
+    }
+    .box--social_links {
+        display: none;
+    }
+    .info--telefon {
+        display: none;
+    }
+    .home {
+        &-banner {
+            &--title {
+                font-size: 90px;
+            }
+            &--text {
+                font-size: 20px;
+            }
+        } 
+    }
+    #home {
+        min-height: 550px;
+    }
+    .price-dish--menu {
+        width: 90%;
+        left: 5%;
+    }
+    .price-dish--photo {
+        width: 93%;
+    }
+    .advertising_desc--title {
+        font-size: 50px;
+    }
+    .advertising_desc--store {
+        img {
+            width: 80%;
+        }
+    }
+    .footer .bg_recipes3 {
+        display: none;
+    }
+    .footer-top--forms input, .footer-top--forms textarea, .footer .clickHere-button {
+        width: 90%;
+    }
+
+
+    
+}
+@media screen and (max-width: 540px) {
+    :root {
+        --main-font-size: 14px;
+        --title-font-size-h1: 32px;
+        --title-font-size-h2: 24px;
+        --title-font-size-h3: 20px;
+        --title-font-size-h4: 16px;
+    }
+    .home-banner {
+        margin-top: 92px;
+    }
+    .home-banner--title {
+        font-size: 65px;
+    }
+    .home-banner--text {
+        font-size: 17px;
+    }
+    .aboutUs-content--photo {
+        margin: 20px 0 10px 0;
+        display: flex;
+        justify-content: center;
+        img {
+            display: block;
+            width: 70%;
+        }
+    }
+    .delightful {
+        padding: 40px 0 40px;
+        .bg_recipes3 {
+            display: none;
+        }
+    }
+    .price-dish--photo {
+        display: none;
+    }
+    .price-dish--menu {
+        position: relative;
+        width: 100%;
+        left: 0;
+        padding: 30px 20px;
+    }
+    .price-dish--item {
+        margin-bottom: 70px;
+    }
+    .price-dish--item_2 .price-dish--menu {
+        left: 0;
+    }
+    .price-dish {
+        padding: 30px 0 30px;
+    }
+    
+}
